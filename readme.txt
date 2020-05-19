@@ -12,7 +12,7 @@ Second, the servo motor was connected to the HiFive1 board.
 Third, serial connections were opened between the Raspberry Pi 4 and the HiFive1 board.
 
 
-The second part of this project was to program the servo motor, LIDAR sensor, and the HiFive1 board to work together as follows:
+*** [comm.c] The second part of this project was to program the servo motor, LIDAR sensor, and the HiFive1 board to work together as follows:
 
 First, the Raspberry Pi 4 had to perform a DNN inference every 50ms from an image that was read from the input video file which would be used to get a steering angle for the RC car. This steering angle was then sent to the HiFive1 board.
 
@@ -27,6 +27,6 @@ While the HiFive1 board is reading the steering angle and controlling the servo 
 * (distance < 50 centimeters) means RED_LED turns ON, indicating that there was an object detected within 50 centimeters of the RC car and the servo motor is going to STOP
 
 
-The third part of this project was to program the Raspberry Pi 4 board to display the current video frame and the DNN's output steering angle onto the current video frame in real-time. We were allowed to use any UI library we wanted to make this happen.
+*** [dnn.py] The third part of this project was to program the Raspberry Pi 4 board to display the current video frame and the DNN's output steering angle onto the current video frame in real-time. We were allowed to use any UI library we wanted to make this happen.
 
 * I did this using the included "cv2" library and the functions: putText(), imshow(), and waitKey().
