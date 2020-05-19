@@ -3,7 +3,7 @@ The purpose of this final project was to combine our knowledge from the material
 For this project, there was no camera attached to the RC car, but it would have been possible to attach a camera to the RC car and connect it to the Raspberry Pi 4 via a USB port and open the camera device instead of the input video file that we used to process real-time video.
 
 
-The first part of this project was to connect all the pieces together as follows:
+*** [hardware set-up] The first part of this project was to connect all the pieces together as follows:
 
 First, the LIDAR sensor was connected to the Raspberry Pi 4.
 
